@@ -1,0 +1,83 @@
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dark_blue {
+    background-color: darkblue;
+}
+
+.light_blue {
+    background-color: lightblue;
+}
+
+#a, #b, #c {
+    width: 40px;
+    height: 7.5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+menu {
+    padding-top: 5px;
+}
+
+nav {
+    /*make is small enough not to over flow the viewport*/
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    /*move if off the viewport*/
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px,0);
+    /*to animate the transform*/
+    transition: transform 0.3s ease;
+}
+h1, h2 {
+    color: white;
+    padding: 5px;
+}
+
+p {
+    color: black;
+    padding: 5px;
+}
+
+.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0px, 0px);
+}
+
+/*reposition everything back to normal at 600px it's common*/
+@media screen and (min-width:600px) {
+      nav {
+          position: relative;
+          transform: translate(0px, 0px);
+      }
+      body {
+          display: flex;
+          /*make content in one row*/
+          flex-flow: row nowrap;
+      }
+
+      main {
+          width: auto;
+          /*allow the element to grow and take the full view port*/
+          flex-grow: 1;
+      }
+}
+
+@media screen and (min-width:700px) {
+
+    
+}
+
+
+@media screen and (min-width:900px) {
+     
+         
+}
