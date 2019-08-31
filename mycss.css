@@ -9,40 +9,71 @@
 
 .dark_blue {
     background-color: darkblue;
-    width: 100%;
 }
 
 .light_blue {
     background-color: lightblue;
-    width: 100%;
 }
 
 .green {
     background-color: green;
-    width: 100%;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+
 }
 
 @media screen and (min-width:600px) {
     
-.dark_blue {
-    width: 25%;
-}
-
+  
 .light_blue {
-    width: 75%;;
+    width: 50%;
+ }
+
+  .green {
+    width: 50%;
   }
 
 }
 
 @media screen and (min-width:700px) {
-    
-    
-   .dark_blue, .green{
-      width: 25%;
-   }
+     
+.light_blue {
+    width: 33%;
+ }
 
-   .light_blue {
-      width: 50%;;
-   }
-  
+  .green {
+    width: 33%;
+  }
+
+  .red {
+    width: 33%;
+  }
+ 
 }
+
+
+@media screen and (min-width:900px) {
+     
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .light_blue {
+        width: 33.33%;
+     }
+    
+      .green {
+        width: 33.33%;
+      }
+    
+      .red {
+        width: 33.33%;
+      }
+     
+    }
